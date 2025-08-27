@@ -226,34 +226,34 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Project Card 1 -->
+                    <!-- Project Card 1: To-Do List -->
                     <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300">
-                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=To-Do+List" alt="To-Do List App" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">To-Do List App</h3>
                             <p class="text-gray-600 text-sm mb-4">A simple and interactive to-do list application built with vanilla HTML, CSS, and JavaScript. It demonstrates my ability to handle DOM manipulation and local storage.</p>
-                            <!-- NOTE: Replace the href with your actual project link! -->
-                            <a href="javascript:void(0)" class="view-project-link text-blue-500 font-semibold hover:underline" data-project-name="To-Do List App">View Project &rarr;</a>
+                            <!-- NOTE: Updated link with your Netlify URL -->
+                            <a href="https://seids-todolist.netlify.app/" class="view-project-link text-blue-500 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">View Project &rarr;</a>
                         </div>
                     </div>
-                    <!-- Project Card 2 -->
+                    <!-- Project Card 2: Weather Dashboard -->
                     <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300">
-                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Weather+Dashboard" alt="Weather Dashboard" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">Weather Dashboard</h3>
                             <p class="text-gray-600 text-sm mb-4">A dynamic weather application that fetches real-time data from a public API. It showcases my skills in asynchronous JavaScript and API integration.</p>
-                            <!-- NOTE: Replace the href with your actual project link! -->
-                            <a href="javascript:void(0)" class="view-project-link text-blue-500 font-semibold hover:underline" data-project-name="Weather Dashboard">View Project &rarr;</a>
+                            <!-- NOTE: Updated link with your Netlify URL -->
+                            <a href="https://seids-weather-dashboard.netlify.app/" class="view-project-link text-blue-500 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">View Project &rarr;</a>
                         </div>
                     </div>
-                    <!-- Project Card 3 -->
+                    <!-- Project Card 3: Interactive Calculator -->
                     <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300">
-                        <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                        <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Calculator" alt="Interactive Calculator" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">Interactive Calculator</h3>
                             <p class="text-gray-600 text-sm mb-4">A fully functional calculator with a clean UI. This project highlights my logic-building skills and event handling in JavaScript.</p>
-                            <!-- NOTE: Replace the href with your actual project link! -->
-                            <a href="javascript:void(0)" class="view-project-link text-blue-500 font-semibold hover:underline" data-project-name="Interactive Calculator">View Project &rarr;</a>
+                            <!-- NOTE: Updated link with your Netlify URL -->
+                            <a href="https://seids-calculator.netlify.app/" class="view-project-link text-blue-500 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">View Project &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -365,10 +365,8 @@
         const projectLinks = document.querySelectorAll('.view-project-link');
         projectLinks.forEach(link => {
             link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const projectName = this.getAttribute('data-project-name');
-                modalMessage.innerText = `To make the "${projectName}" link work, you need to replace 'javascript:void(0)' with the actual URL to your live project or GitHub repository.`;
-                modal.style.display = "flex";
+                // The links now have correct URLs, so we don't need this modal anymore.
+                // The `target="_blank"` attribute will open the link in a new tab.
             });
         });
     </script>
